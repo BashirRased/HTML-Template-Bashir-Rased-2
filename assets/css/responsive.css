@@ -1,0 +1,86 @@
+/**
+  
+* Template Name: Bashir Rased - Freelancer HTML Portfolio Template
+* Version: 1.0.3
+* Author: Bashir Rased
+* Author URL: www.bashir-rased.com
+* Email: info@bashir-rased.com
+* First Release: 09 September 2019
+
+**/
+
+@media all and (min-width: 993px) {
+	.rb-desktop-menu-toggle {
+		display: none !important;
+	}
+}
+@media all and (max-width: 992px) {
+	.rb-header-fixed {
+		position: static;
+	}
+	.float-right {
+		float: none !important;
+	}
+	.rb-header-top-left,
+	.rb-header-top-right,
+	.rb-footer-text-left p,
+	.rb-footer-text-right p {
+		text-align: center;
+	}
+	.rb-desktop-menu,
+	.rb-content-area-right{
+		display: none;
+	}
+	.rb-header-content .col-lg-6 {
+		height: 100%;
+	}
+	.rb-about-me-content,
+	.rb-resume-certification-area,
+	.rb-contact-me-sub-title {
+		margin-top: 50px;
+	}
+	.rb-mobile-menu {
+		display: block;
+	}
+	.rb-mobile-menu-icons {
+		color: #ffffff;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		font-size: 25px;
+		margin: 25px 0;
+		border-radius: 5px;
+		cursor: pointer;
+		float: right;
+	}
+	.rb-desktop-menu {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.rb-desktop-menu li {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}
+@media all and (max-width: 576px) {
+	.rb-header-social-icons li {
+		margin: 5px 16px;
+	}
+	.rb-scroll-to-top-area {
+		bottom: 100px;
+	}
+}
+@media all and (max-width: 400px) {
+	.rb-mobile-menu-icons {
+		margin: 50px 0;
+	}
+	.rb-header-type-effect h1 {
+		font-size: 30px;
+	}
+	.rb-contact-massage-name input, .rb-contact-massage-email input, .rb-contact-massage-subject input, .rb-contact-massage-box-area textarea {
+		font-size: 13px;
+	}
+}

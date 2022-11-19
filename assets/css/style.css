@@ -1,0 +1,844 @@
+/**
+  
+* Template Name: Bashir Rased - Freelancer HTML Portfolio Template
+* Version: 1.0.3
+* Author: Bashir Rased
+* Author URL: www.bashir-rased.com
+* Email: info@bashir-rased.com
+* First Release: 09 September 2019
+
+**/
+
+/*=============================
+Table of CSS Content Start Here
+===============================
+	01. Default CSS
+	02. Font Awesome Icon Edit
+	03. Common Classes
+	04. Preloader CSS
+	05. Hire Me Modal CSS
+	06. Section Title
+	07.	Header Area
+		7.1. Header Top Area
+		7.2. Header Menu Area
+		7.3. Header Menu Toggle Area
+		7.4. Header Content Area		
+	08. About Me Section
+	09. Hire Me Section
+	10. My Skills Section
+	11. My Resume Section
+	12. Services Section
+	13. Portfolio Section
+	14. Subscribe Me Section
+	15. Contact Me Section
+	16. Footer Area
+	17. Scroll to Top Area
+=============================
+Table of CSS Content End Here
+===========================*/
+
+/*========================
+01.	Default CSS Start Here
+========================*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 35px;
+}
+h3 {
+	font-size: 30px;
+}
+h4 {
+	font-size: 25px;
+}
+h5 {
+	font-size: 22px;
+}
+h6 {
+	font-size: 20px;
+}
+a,a:hover {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img {
+	width: 100%;
+}
+p {
+	text-align: justify;
+}
+/*======================
+01.	Default CSS End Here
+======================*/
+
+/*=======================================
+02. Font Awesome Icon Edit CSS Start Here
+=======================================*/
+.fa-phone {
+	transform: rotate(90deg);
+}
+/*=====================================
+02. Font Awesome Icon Edit CSS End Here
+=====================================*/
+
+/*===============================
+03. Common Classes CSS Start Here
+===============================*/
+.rb-contact-me-btn,
+.rb-hire-me-btn,
+.rb-download-cv-btn {
+	display: inline-block;
+}
+.rb-contact-me-btn a,
+.rb-download-cv-btn a {
+	text-transform: capitalize;
+	padding: 10px 30px;
+	color: #ffffff;
+	margin: 0 10px 10px;
+}
+.rb-hire-me-btn button {
+	text-transform: capitalize;
+	padding: 10px 30px;
+	color: #ffffff;
+	margin: 0 10px 10px;
+	border: none;
+	cursor: pointer;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.rb-error-massage {
+	text-transform: capitalize;
+}
+section.rb-scroll-menu {
+	min-height: 100vh;
+}
+/*===============================
+03. Common Classes CSS End Here
+===============================*/
+.loading-end {
+	display: none;
+}
+/*==========================
+04. Preloader CSS Start Here
+==========================*/
+
+/*========================
+04. Preloader CSS End Here
+========================*/
+
+/*==============================
+05. Hire Me Modal CSS Start Here
+==============================*/
+.modal-header .close {
+	opacity: 1;
+	font-size: 33px;
+	color: #ffffff;
+}
+.modal-title {
+	text-transform: capitalize;
+}
+.modal-body label {
+	display: block;
+}
+.modal-body input,
+.modal-body select,
+.modal-body textarea {
+	width: 100%;
+	padding: 10px;
+}
+#job-request {
+	cursor: pointer;
+	color: #ffffff;
+	margin: 0;
+}
+/*============================
+05. Hire Me Modal CSS End Here
+============================*/
+
+/*==============================
+06. Section Title CSS Start Here
+==============================*/
+section {
+	padding: 70px 0;
+}
+.rb-section-title {
+	padding: 50px 0;
+	text-align: center;
+	text-transform: capitalize;
+}
+.rb-section-title h2 {
+	display: inline-block;
+	position: relative;
+}
+.rb-section-title h2:before{
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	background: #333333;
+}
+.rb-section-title h2:after{
+	content: "";
+	position: absolute;
+	bottom: -24px;
+	right: 50%;
+	transform: translateX(-50%) rotate(45deg);
+	width: 20px;
+	height: 20px;
+	margin-right: -20px;
+}
+/*============================
+06. Section Title CSS End Here
+============================*/
+
+/*============================
+07.	Header Area CSS Start Here
+============================*/
+#rb-header {
+	background: #f0f0f0;
+}
+
+/* 7.1. Header Top Area Start Here */
+.rb-header-top {
+	color: #ffffff;
+	padding: 10px 0;
+}
+.rb-header-top span:first-child {
+	margin-right: 10px;
+}
+/* 7.1. Header Top Area End Here */
+
+/* 7.2. Header Menu Area Start Here */
+.rb-header-menu-area {
+	background: #ffffff;
+	box-shadow: 0 3px 2px rgba(0,0,0,.2);
+}
+.rb-header-fixed {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.rb-mobile-menu {
+	display: none;
+}
+.rb-desktop-menu nav ul li {
+	float: left;
+	padding: 40px 10px;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+.rb-desktop-menu nav ul li a {
+	display: block;
+	color: #333333;
+}
+/* 7.2. Header Menu Area End Here */
+
+/* 7.3. Header Menu Toggle Area End Here */
+.rb-desktop-menu-toggle {
+	text-align: center;
+	text-transform: capitalize;
+	display: none;
+}
+.rb-desktop-menu-toggle a,
+.rb-desktop-menu-toggle a:hover {
+	color: #ffffff;
+}
+.rb-desktop-menu-toggle li {
+	border-bottom: 1px solid #f0f0f0;
+	padding: 20px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+.rb-desktop-menu-toggle .rb-header-active-menu {
+	color: #ffffff !important;
+}
+/* 7.3. Header Menu Toggle Area Start Here */
+
+/* 7.4. Header Content Area Start Here */
+.rb-header-content {
+	height: 570px;
+}
+.rb-content-area-left {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.rb-content-left {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.rb-header-title {
+	text-transform: capitalize;
+}
+.rb-header-title h4 {
+	line-height: 40px;
+}
+.rb-type-effect-skills {
+	margin-left: 5px;
+}
+.rb-header-social-icons li {
+	display: inline-block;
+	margin: 25px 16px;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	transform: rotate(-35deg) skew(25deg);
+	position: relative;
+}
+.rb-header-social-icons li a {
+	color: #ffffff;
+}
+.rb-header-social-icons li a span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.rb-header-social-icons li:hover a span:nth-child(5) {
+	transform: translate(40px,-40px);
+	opacity: 1;
+}
+.rb-header-social-icons li:hover a span:nth-child(4) {
+	transform: translate(30px,-30px);
+	opacity: .8;
+}
+.rb-header-social-icons li:hover a span:nth-child(3) {
+	transform: translate(20px,-20px);
+	opacity: .6;
+}
+.rb-header-social-icons li:hover a span:nth-child(2) {
+	transform: translate(10px,-10px);
+	opacity: .4;
+}
+.rb-header-social-icons li:hover a span:nth-child(1) {
+	transform: translate(0,0);
+	opacity: .2;
+}
+.rb-header-social-icons li:nth-child(1) a span {
+	background: #3b5998;
+}
+.rb-header-social-icons li:nth-child(2) a span {
+	background: #1da1f2;
+}
+.rb-header-social-icons li:nth-child(3) a span {
+	background: #007bb5;
+}
+.rb-header-social-icons li:nth-child(4) a span {
+	background: #bd081c;
+}
+.rb-header-social-icons li:nth-child(5) a span {
+	background: #c32aa3;
+}
+.rb-content-area-right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+/* 7.4. Header Content Area End Here */
+
+/*==========================
+07.	Header Area CSS End Here
+==========================*/
+
+/*=================================
+08. About Me Section CSS Start Here
+=================================*/
+.rb-about-me-section-img {
+	padding: 10px;
+	border-radius: 10px;
+}
+.rb-about-me-btns {
+	margin: 10px 0;
+}
+.rb-about-me-separator {
+	width: 100%;
+	height: 1px;
+	margin: 20px 0;
+}
+.rb-about-me-information {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.rb-about-me-information li {
+	display: block;
+	width: 100%;
+	margin: 10px;
+}
+.rb-about-me-info-title {
+	font-weight: 700;
+}
+/*===============================
+08. About Me Section CSS End Here
+===============================*/
+
+/*========================
+09. Hire Me CSS Start Here
+========================*/
+#rb-hire-me {
+	background: rgba(0,0,0,.85);
+	color: #ffffff;
+	text-align: center;
+	text-transform: capitalize;
+}
+/*======================
+09. Hire Me CSS End Here
+======================*/
+
+/*==================================
+10. My Skills Section CSS Start Here
+==================================*/
+#rb-my-skills {
+	background: #f0f0f0;	
+}
+.rb-skills-bar-area {
+	margin-bottom: 80px;
+}
+.rb-skills-title h3 {
+	text-transform: capitalize;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 35px;
+}
+.rb-skills-title h3:after {
+	position: absolute;
+	content: "";
+	bottom: -12px;
+	left: 0;
+	width: 50%;
+	height: 5px;
+}
+.rb-skills-bar-text-area {
+	overflow: hidden;
+	font-size: 20px;
+}
+.rb-skills-bar {
+	width: 100%;
+	height: 6px;
+	position: relative;
+	background: #333333;
+	margin-bottom: 20px;
+}
+.rb-skills-bar-animation {
+	width: 0;
+	height: 6px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.rb-skills-bar-title-area {
+	text-transform: capitalize;
+}
+/*================================
+10. My Skills Section CSS End Here
+================================*/
+
+/*==================================
+11. My Resume Section CSS Start Here
+==================================*/
+.rb-resume-sub-title h3 {
+	text-transform: capitalize;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 35px;
+}
+.rb-resume-sub-title h3:after {
+	position: absolute;
+	content: "";
+	bottom: -12px;
+	left: 0;
+	width: 50%;
+	height: 5px;
+}
+.rb-resume-single-item {
+	padding: 10px;
+	cursor: pointer;
+	transition: 1s;
+	margin-bottom: 20px;
+}
+.rb-resume-single-item:hover {
+	color: #ffffff;
+}
+.rb-resume-single-item-details {
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+/*================================
+11. My Resume Section CSS End Here
+================================*/
+
+/*=================================
+12. Services Section CSS Start Here
+=================================*/
+#rb-my-services {
+	background: #f0f0f0;	
+}
+#rb-my-services .col-lg-4 {
+	margin-bottom: 20px;
+}
+.rb-services-single-item {
+	padding: 20px;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	transition: 1s;
+	min-height: 400px;
+}
+.rb-services-single-item:hover .rb-services-single-area-hover {
+	display: block;
+}
+.rb-services-single-item:hover .rb-services-single-area {
+	display: none;
+}
+.rb-services-single-area-hover {
+	display: none;
+	text-align: center;
+	color: #ffffff;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	padding: 0 20px;
+}
+.rb-services-hover-icons i {
+	font-size: 50px;
+	background: #ffffff;
+	padding: 15px;
+	border-radius: 50%;
+}
+.rb-services-hover-title {
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+.rb-services-single-area {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.rb-services-icons i {
+	padding: 30px;
+	font-size: 90px;
+	border-radius: 50%;
+}
+.rb-services-title {
+	text-transform: capitalize;
+	margin-top: 30px;
+}
+/*===============================
+12. Services Section CSS End Here
+===============================*/
+
+/*==================================
+13. Portfolio Section CSS Start Here
+==================================*/
+.rb-portfolio-btn-area{
+	margin: 20px auto;
+	overflow: hidden;
+}
+.rb-portfolio-btn-area li {
+	float: left;
+	text-transform: capitalize;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin: 0 10px 10px 0;
+	display: block;
+}
+.rb-portfolio-active {
+	color: #ffffff !important;
+}
+.rb-portfolio-signle-item-area {
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 20px;
+}
+.rb-portfolio-signle-item-area:hover .rb-portfolio-signle-item-hover-area {
+	display: block;
+}
+.rb-portfolio-signle-item-hover-area {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #ffffff;
+	width: 100%;
+	padding: 15px;
+	display: none;
+}
+.rb-portfolio-signle-item-hover a {
+	color: #ffffff;
+}
+.rb-portfolio-signle-title {
+	text-transform: capitalize;
+}
+.rb-portfolio-signle-sub-category {
+	text-transform: capitalize;
+}
+/*================================
+13. Portfolio Section CSS End Here
+================================*/
+
+/*=====================================
+14. Subscribe Me Section CSS Start Here
+=====================================*/
+#rb-subscribe {
+	background: rgba(0,0,0,.85);
+	color: #ffffff;
+	text-align: center;
+	text-transform: capitalize;
+}
+.rb-subscribe-form form {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+}
+.rb-subscribe-text-box {
+	width: 90%;
+	max-width: 500px;
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+	background: none;
+	color: #ffffff;
+}
+.rb-subscribe-submit-btn {
+	padding: 10px 30px;
+	color: #ffffff;
+	cursor: pointer;
+	text-transform: capitalize;
+	display: block;
+	margin: 0 auto;
+}
+/*===================================
+14. Subscribe Me Section CSS End Here
+===================================*/
+
+/*===================================
+15. Contact Me Section CSS Start Here
+===================================*/
+#rb-contact-me {
+	background: #f0f0f0;	
+}
+.rb-contact-me-sub-title {
+	text-transform: capitalize;
+}
+.rb-contact-me-sub-title h3 {
+	display: inline-block;
+	position: relative;
+	margin-bottom: 35px;
+}
+.rb-contact-me-sub-title h3:after {
+	position: absolute;
+	content: "";
+	bottom: -12px;
+	left: 0;
+	width: 50%;
+	height: 5px;
+}
+.rb-contact-massage-name-area,
+.rb-contact-massage-email-area,
+.rb-contact-massage-subject-area,
+.rb-contact-massage-box-area {
+	position: relative;
+	width: 100%;
+}
+.rb-contact-massage-name input,
+.rb-contact-massage-email input,
+.rb-contact-massage-subject input,
+.rb-contact-massage-box-area textarea {
+	width: 100%;
+	padding: 10px 0 10px 45px;
+	display: block;
+	margin-bottom: 30px !important;
+}
+.rb-contact-massage-name-icon,
+.rb-contact-massage-email-icon,
+.rb-contact-massage-subject-icon,
+.rb-contact-massage-box-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 100%;
+	color: #ffffff;
+}
+.rb-contact-massage-name-icon i,
+.rb-contact-massage-email-icon i,
+.rb-contact-massage-subject-icon i,
+.rb-contact-massage-box-icon i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.rb-contact-massage-submit button {
+	padding: 10px 30px;
+	text-transform: capitalize;
+	color: #ffffff;
+	cursor: pointer;
+	width: 100%;
+}
+.rb-contact-info-area {
+	font-size: 20px;
+}
+.rb-contact-info-highlight {
+	text-transform: capitalize;
+}
+.rb-contact-info-social-icons  li {
+	margin: 4px;
+	float: left;
+	position: relative;
+}
+.rb-contact-info-social-icons  li a {
+	width: 40px;
+	height: 40px;
+	display: block;
+	color: white;
+}
+.rb-contact-info-social-icons  li a span {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+.rb-contact-info-social-icons  li a span:before,
+.rb-contact-info-social-icons  li a span:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
+}
+.rb-contact-info-social-icons  li a span:before {
+	transform-origin: top;
+	transition: transform 0.5s;
+}
+.rb-contact-info-social-icons  li:hover a span:before {
+	transform: rotateX(90deg) translateY(-50%);
+}
+.rb-contact-info-social-icons  li a span:after {
+	transform-origin: bottom;
+	transition: transform 0.5s;
+	transform: rotateX(90deg) translateY(50%);
+}
+.rb-contact-info-social-icons  li:hover a span:after {
+	transform: rotateX(0deg) translateY(0);
+}
+.rb-contact-info-social-icons  li:nth-child(1) a span:before,
+.rb-contact-info-social-icons  li:nth-child(1) a span:after {
+	content: "\f39e";	
+	font-family: "Font Awesome 5 Brands";
+}
+.rb-contact-info-social-icons  li:nth-child(1) a span:after {
+	background: #3b5998;
+}
+.rb-contact-info-social-icons  li:nth-child(2) a span:before,
+.rb-contact-info-social-icons li:nth-child(2) a span:after {
+	content: "\f099";	
+	font-family: "Font Awesome 5 Brands";
+}
+.rb-contact-info-social-icons li:nth-child(2) a span:after {
+	background: #1da1f2;
+}
+.rb-contact-info-social-icons li:nth-child(3) a span:before,
+.rb-contact-info-social-icons li:nth-child(3) a span:after {
+	content: "\f0e1";	
+	font-family: "Font Awesome 5 Brands";
+}
+.rb-contact-info-social-icons li:nth-child(3) a span:after {
+	background: #007bb5;
+}
+.rb-contact-info-social-icons li:nth-child(4) a span:before,
+.rb-contact-info-social-icons li:nth-child(4) a span:after {
+	content: "\f231";	
+	font-family: "Font Awesome 5 Brands";
+}
+.rb-contact-info-social-icons li:nth-child(4) a span:after {
+	background: #bd081c;
+}
+.rb-contact-info-social-icons li:nth-child(5) a span:before,
+.rb-contact-info-social-icons li:nth-child(5) a span:after {
+	content: "\f16d";	
+	font-family: "Font Awesome 5 Brands";
+}
+.rb-contact-info-social-icons li:nth-child(5) a span:after {
+	background: #c32aa3;
+}
+/*=================================
+15. Contact Me Section CSS End Here
+=================================*/
+
+/*====================================
+16. Footer Area Section CSS Start Here
+====================================*/
+#rb-footer {
+	background: #1c1c1c;
+	padding: 10px 0;
+	color: #ffffff;
+}
+#rb-footer p {
+	margin: 0;
+}
+/*==================================
+16. Footer Area Section CSS End Here
+==================================*/
+
+/*===================================
+17. Scroll to Top Area CSS Start Here
+===================================*/
+.rb-scroll-to-top-area {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 50px;
+	height: 50px;	
+	color: #ffffff;
+	font-size: 25px;
+	cursor: pointer;
+}
+.rb-scroll-to-top-area i {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+/*=================================
+17. Scroll to Top Area CSS End Here
+=================================*/
